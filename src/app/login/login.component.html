@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="top-bar"></div>
+    <div class="inner-container">
+      <img src="https://cdn.discordapp.com/attachments/534527848845934609/1253796301209079938/Logo.png?ex=6677284c&is=6675d6cc&hm=7a2881c9b670c186af8f5e99741e6bad6b81a3d43e5815db8bd8bba65a2be298&" alt="Logo" class="logo">
+      <p class="subtitle">Conectando a sua saúde com a gente!</p>
+      <input
+        type="text"
+        class="input"
+        placeholder="E-mail"
+        [(ngModel)]="form.email"
+      >
+      <input
+        type="password"
+        class="input"
+        placeholder="Senha"
+        [(ngModel)]="form.senha"
+      >
+      <button class="button" (click)="handleSubmit()">Login</button>
+      <p class="login-text">
+        Não tem uma conta?
+        <a class="login-link" routerLink="/cadastro">Criar agora!</a>
+      </p>
+    </div>
+  </div>
+  

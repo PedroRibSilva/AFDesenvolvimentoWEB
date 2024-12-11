@@ -1,0 +1,66 @@
+.container {
+    flex: 1;
+    padding: 0;
+  }
+  .top-bar {
+    background-color: #09374C;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 3px;
+  }
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    position: absolute; /* Position above the top bar */
+    top: 60px; /* Align with the top edge */
+    color: white;
+  }
+
+  .video-container {
+    background-color: #f0f0f0;
+    padding: px;
+    width: 100%;
+  }
+  .video-card {
+    margin-bottom: 16px;
+    cursor: pointer;
+  }
+  .video-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .video-description {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .bottom-bar {
+    background-color: #09374C;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+  }
+  .menu-icon {
+    width: 24px;
+    height: 24px;
+    margin: 8px;
+  }
+  .icon {
+    width: 65px;
+    height: 50px;
+  }
+  .greeting {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+  }
+  

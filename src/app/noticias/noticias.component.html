@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="top-bar">
+      <p class="greeting">Olá, Seja bem vindo(a)!</p>
+    </div>
+    <p class="date-text">Dia {{ day }} do mês {{ month }} de {{ year }}</p>
+  
+    <div class="image-container">
+      <div class="info-row" (click)="openExternalLink('https://www.bbc.com/portuguese/articles/ce550yrv3v7o')">
+        <img src="https://cdn.discordapp.com/attachments/534527848845934609/1253824762656854046/idosa.jpg?ex=667742ce&is=6675f14e&hm=520075ce3eaf70c1a6eb900578c0ed41e2e8ede37e9957d679b6cbda7a6e2aed&" class="info-icon" />
+        <p class="info-text">O drama dos idosos nas inundações do Rio Grande do Sul: 'Parecem deixados de lado'</p>
+      </div>
+      <div class="info-row" (click)="openExternalLink('https://monitordomercado.com.br/noticias/93210-confira-como-solicitar-de-forma-simples-o-novo-cartao-de-onibus-para-idosos/#google_vignette')">
+        <img src="https://cdn.discordapp.com/attachments/534527848845934609/1253824762304663615/cartao.jpg?ex=667742ce&is=6675f14e&hm=b6b63beecab32d39e76d36fdb34d7ff289d3c28cceb82b3e8ef543c4c6adafe6&" class="info-icon" />
+        <p class="info-text">Confira como solicitar de forma simples o novo Cartão de Ônibus para Idosos!</p>
+      </div>
+    </div>
+  
+    <div class="bottom-bar">
+      <a routerLink="/telainicial" class="info-row">
+        <img src="https://cdn.discordapp.com/attachments/534527848845934609/1253821025670664202/painelaz.png?ex=66773f53&is=6675edd3&hm=9756fb3ca6aff45668bb93c19915f815fc3a5314b41441dd6774c57f02feebe1&" class="icon" />
+      </a>
+      <a routerLink="/exerc" class="info-row">
+        <img src="https://cdn.discordapp.com/attachments/534527848845934609/1253819425149419520/lamplaz.png?ex=66773dd5&is=6675ec55&hm=9ef5a3277557ed15fb62e7f44773be4f13e517c42efaebff3d9515b873c2672d&" class="icon" />
+      </a>
+      <img src="https://cdn.discordapp.com/attachments/534527848845934609/1253821026186563654/newsb.png?ex=66773f53&is=6675edd3&hm=f51c89e9306f6114d67ad9280701d31130e0ac51d7308ad433e06defe8de0fe6&" class="icon" />
+    </div>
+  </div>
+  

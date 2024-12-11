@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="top-bar">
+      <p class="greeting">Olá, Seja bem vindo(a)!</p>
+    </div>
+    <p class="date-text">Dia {{ day }} do mês {{ month }} de {{ year }}</p>
+  
+    <div class="info-row">
+      <img src="https://cdn.discordapp.com/attachments/534527848845934609/1253819422779506809/clima.png?ex=66773dd5&is=6675ec55&hm=37cbbb30b3ccd32d6edc31aac84d7c8b1a46a68f672702562e21ebe47cba22de&" class="info-icon" />
+      <p>Temperatura: {{ temperature }}C°</p>
+    </div>
+  
+    <div class="info-row">
+      <img src="https://cdn.discordapp.com/attachments/534527848845934609/1253819422993285231/copo.png?ex=66773dd5&is=6675ec55&hm=c05703b7079b42cf95b05b07c349dd313743e438ad546b883d608f2c815619fd&" class="info-icon" />
+      <ng-container *ngIf="isEditingWater; else displayWater">
+        <input
+          type="text"
+          class="text-input"
+          [(ngModel)]="inputValue"
+          (blur)="handleWaterSubmit()"
+          keyboardType="numeric"
+        />
+      </ng-container>
+      <ng-template #displayWater>
+        <p (click)="handleWaterEdit()">Água consumida hoje: {{ waterConsumed }}ml/3000ml</p>
+      </ng-template>
+    </div>
+  
+    <div class="bottom-bar">
+      <img src="https://cdn.discordapp.com/attachments/534527848845934609/1253819423303930009/painelb.jpg?ex=66773dd5&is=6675ec55&hm=fcec0c38e4ac1aef7770662f1316e8e2cbbdc1fea84a38842ddd1a160ea1e671&" class="iconbot" />
+      <a routerLink="/exerc">
+        <img src="https://cdn.discordapp.com/attachments/534527848845934609/1253819425149419520/lamplaz.png?ex=66773dd5&is=6675ec55&hm=9ef5a3277557ed15fb62e7f44773be4f13e517c42efaebff3d9515b873c2672d&" class="iconbot" />
+      </a>
+      <a routerLink="/noticias">
+        <img src="https://cdn.discordapp.com/attachments/534527848845934609/1253819425375653888/newsaz.png?ex=66773dd5&is=6675ec55&hm=e4a8956a2e1dbabaec3a042d3a387bb010546012e32ae961fcd9153f34ac87da&" class="iconbot" />
+      </a>
+    </div>
+  </div>
+  
